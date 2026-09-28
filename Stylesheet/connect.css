@@ -1,0 +1,112 @@
+/* Styling for the contact page: header and contact details card. */
+
+:root {
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.08);
+}
+
+/* HEADER */
+.connect-page {
+    padding-top: 3rem;
+}
+
+.connect-header {
+    max-width: 680px;
+}
+
+.connect-header h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.section-label {
+    color: var(--brand-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.section-copy {
+    color: #bcbcbc;
+    font-size: 1.02rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* CARDS */
+.connect-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+.card-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* CONTACT DETAILS */
+.contact-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(var(--brand-blue-rgb), 0.5);
+    color: inherit;
+}
+
+.contact-item strong {
+    display: block;
+    color: #fff;
+}
+
+.contact-item span {
+    color: #bcbcbc;
+    font-size: 0.92rem;
+    word-break: break-all;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(var(--brand-blue-rgb), 0.14);
+    color: var(--brand-accent);
+}
+
+@media (max-width: 767px) {
+    .connect-page {
+        padding-top: 2rem;
+    }
+
+    .connect-card {
+        padding: 20px;
+    }
+}

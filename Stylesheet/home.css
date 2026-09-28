@@ -1,0 +1,164 @@
+/* Home page visual styling for the hero, project cards, start section, and story sections. */
+
+/* image glow effect */
+img {
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+h2:hover {
+  color: var(--brand-accent);
+  transition: color 0.3s ease;
+}
+
+h2 span:hover {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+/* START SECTION CARDS */
+.start-card {
+  text-decoration: none;
+  color: #ccc;
+  border: none;
+  outline: none;
+  background-color: var(--bg-raised);
+  box-shadow: -9px 6px 17px -4px rgba(0, 0, 0, 0.82);
+  transition: all 0.3s ease;
+  display: block;
+  height: 100%;
+}
+
+.start-card i {
+  color: var(--brand-accent);
+}
+
+.start-card h6 {
+  font-weight: 500;
+}
+
+/* HOVER EFFECT */
+.start-card:hover {
+  background-color: var(--brand-blue);
+  color: white;
+  transform: translateY(-5px);
+}
+
+.start-card:hover i {
+  color: white;
+}
+
+.card {
+  border: 1px solid rgba(255,255,255,0.06);
+  outline: none;
+  background: linear-gradient(145deg, rgba(23, 34, 56, 0.95), rgba(15, 27, 51, 0.95));
+  box-shadow: -9px 6px 17px -4px rgba(0, 0, 0, 0.82);
+  height: 100%;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.08), transparent);
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: auto 12% 12% auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--brand-blue-rgb), 0.28), transparent 70%);
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35), 0 0 24px rgba(var(--brand-blue-rgb), 0.16);
+  border-color: rgba(var(--brand-blue-rgb), 0.35);
+}
+
+.card:hover::before {
+  transform: translateX(120%);
+}
+
+.card:hover::after {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card p,
+h4 {
+  color: #ffffff;
+}
+
+.card h4 {
+  min-height: 60px;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(135deg, #f2f2f2, #cfd2d6);
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .circle {
+  background: var(--brand-gradient);
+  color: white;
+  transform: rotate(6deg) scale(1.05);
+}
+
+.project-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tag {
+  background: var(--bg-raised);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-3px);
+  background: var(--brand-blue);
+  box-shadow: 0 6px 14px rgba(var(--brand-blue-rgb), 0.2);
+}

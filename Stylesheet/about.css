@@ -1,0 +1,148 @@
+/* Styling for the about page: intro with photo, skills, and fun facts. */
+
+/* SHARED SECTION PIECES */
+.section-label {
+    color: var(--brand-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-head h2 {
+    color: #fff;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin: 0;
+}
+
+/* INTRO */
+.about-intro {
+    padding-top: 3rem;
+}
+
+.about-intro h1 {
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 1rem;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    color: #c4c9d4;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.quick-facts {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quick-facts li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e4e9f5;
+    font-size: 0.92rem;
+}
+
+.quick-facts i {
+    color: var(--brand-accent);
+}
+
+/* CARDS (skills and fun facts) */
+.info-card {
+    height: 100%;
+    padding: 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(var(--brand-blue-rgb), 0.6);
+}
+
+.card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(var(--brand-blue-rgb), 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.card-icon i {
+    font-size: 20px;
+    color: var(--brand-accent);
+}
+
+.info-card h3 {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #bdbdbd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* SKILLS */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-chip {
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(var(--brand-blue-rgb), 0.14);
+    border: 1px solid rgba(var(--brand-blue-rgb), 0.3);
+    color: #e4e9f5;
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+    .about-intro {
+        text-align: center;
+    }
+
+    .quick-facts,
+    .about-intro .d-flex {
+        justify-content: center;
+    }
+}

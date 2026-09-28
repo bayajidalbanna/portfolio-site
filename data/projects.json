@@ -1,0 +1,140 @@
+[
+  {
+    "id": "project1",
+    "title": "Promotional Website",
+    "description": "A promotional website designed for a public figure, featuring a product catalogue, contact form, and latest updates, built with a focus on responsive design and user experience.",
+    "date": "October 2025",
+    "dateSort": "2025-10-01",
+    "category": "Web",
+    "type": "college",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "repoUrl": "https://github.com/bayajidalbanna/T.K-Maxx",
+    "websiteUrl": "https://bayajidalbanna.github.io/T.K-Maxx/",
+    "media": [
+      {
+        "type": "image",
+        "src": "img/project-images/pr1.webp",
+        "alt": "Home page with promotional and recommended products"
+      },
+      {
+        "type": "image",
+        "src": "img/project-images/pr1.2.webp",
+        "alt": "Shop page with men, women and kids categories"
+      },
+      {
+        "type": "image",
+        "src": "img/project-images/pr1.3.webp",
+        "alt": "Contact page with details and message form"
+      }
+    ]
+  },
+  {
+    "id": "project3",
+    "title": "Unity Game",
+    "description": "This project is a prototype 2D video game developed using the Unity Game Engine, inspired by classic games such as Asteroids and Geometry Wars.",
+    "date": "January 2026",
+    "dateSort": "2026-01-01",
+    "category": "Game",
+    "type": "college",
+    "tags": [
+      "Unity",
+      "Game Development",
+      "2D Design",
+      "Gameplay"
+    ],
+    "repoUrl": "",
+    "websiteUrl": "",
+    "media": [
+      {
+        "type": "video",
+        "src": "img/project-images/game.mp4",
+        "alt": "Game prototype footage"
+      }
+    ]
+  },
+  {
+    "id": "project4",
+    "title": "Database System",
+    "description": "A database system built using SQLite to manage users, products, and sales data, including CRUD operations and data analysis for business insights.",
+    "date": "February 2026",
+    "dateSort": "2026-02-01",
+    "category": "Database",
+    "type": "college",
+    "tags": [
+      "SQLite",
+      "Database",
+      "CRUD"
+    ],
+    "repoUrl": "https://github.com/bayajidalbanna/Shop-Database",
+    "websiteUrl": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "img/project-images/pr-data.webp",
+        "alt": "Database UI overview"
+      }
+    ]
+  },
+  {
+    "id": "project5",
+    "title": "Escape Room Game",
+    "description": "An interactive text-based escape room game built as a console application, featuring puzzles, item collection, and room exploration.",
+    "date": "May 2026",
+    "dateSort": "2026-05-01",
+    "category": "Game",
+    "type": "college",
+    "tags": [
+      "Python",
+      "Game Logic",
+      "Problem Solving"
+    ],
+    "repoUrl": "https://github.com/bayajidalbanna/ESCAPUZZLE",
+    "websiteUrl": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "img/project-images/pr5.webp",
+        "alt": "Escape room game console view"
+      }
+    ]
+  },
+  {
+    "id": "project6",
+    "title": "Digital Wellbeing Project",
+    "description": "A digital wellbeing project created for InternetMatters.org, designed to promote healthy technology use through an engaging website for college students.",
+    "date": "June 2026",
+    "dateSort": "2026-06-01",
+    "category": "Web",
+    "type": "college",
+    "tags": [
+      "UI/UX",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "repoUrl": "https://github.com/bayajidalbanna/CalmDG",
+    "websiteUrl": "https://bayajidalbanna.github.io/CalmDG/",
+    "media": [
+      {
+        "type": "image",
+        "src": "img/project-images/pr6.1.webp",
+        "alt": "Performance dashboard"
+      },
+      {
+        "type": "image",
+        "src": "img/project-images/pr6.2.webp",
+        "alt": "User interface design"
+      },
+      {
+        "type": "image",
+        "src": "img/project-images/pr6.3.webp",
+        "alt": "Mobile responsive view"
+      }
+    ]
+  }
+]
